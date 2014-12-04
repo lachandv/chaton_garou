@@ -18,6 +18,6 @@
 		</style>
 	</head>
 	<body>
-		<img src="../img/background2.jpg" alt="Chaton garou : Que le chaton soit avec toi !!!"/>
+		<img src="img/background2.jpg" alt="Chaton garou : Que le chaton soit avec toi !!!"/>
 	</body>
 </html>
