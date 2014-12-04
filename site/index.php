@@ -10,3 +10,11 @@
 		<img src="img/background2.jpg" alt="Chaton garou : Que le chaton soit avec toi !!!"/>
 	</body>
 </html>
+
+<?php
+session_start();
+        require_once("sql.php");
+	connect();
+?>
+
+

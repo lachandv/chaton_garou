@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: 127.0.0.1
--- Généré le: Jeu 04 Décembre 2014 à 19:53
+-- Généré le: Jeu 04 Décembre 2014 à 20:37
 -- Version du serveur: 5.5.32
 -- Version de PHP: 5.4.16
 
@@ -92,6 +92,20 @@ CREATE TABLE IF NOT EXISTS `catastrophe` (
   `id_type_catastrophe` int(4) NOT NULL COMMENT 'id_type_catastrophe',
   PRIMARY KEY (`id_catastrophe`),
   UNIQUE KEY `id_catastrophe` (`id_catastrophe`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `type_catastrophe`
+--
+
+CREATE TABLE IF NOT EXISTS `type_catastrophe` (
+  `id_type_catastrophe` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `libelle_catastrophe` varchar(20) CHARACTER SET utf8 NOT NULL,
+  `gravite_caastrophe` int(1) NOT NULL,
+  PRIMARY KEY (`id_type_catastrophe`),
+  UNIQUE KEY `id_type_catastrophe` (`id_type_catastrophe`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
