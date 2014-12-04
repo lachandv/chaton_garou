@@ -62,42 +62,32 @@ class Association {
 
 
 	public static function readAllAssociations($pdo) {
-    	try {
-			$associations=array();
-			$query = $pdo->prepare('select * from association');
-			$query->execute();
+
+		$query = 'select * from association';
 			
-			$data = $query->fetchAll();
-			
-			foreach($data as $row)
-			{
-				$associations[]= new Association(
-				    $row["id_association"], 
-				    $row["libelle_association"],
-				    null
-				    );
-			}
-			
-			return $associations;
+		$data = query($query);	
+		$associations = array();
+		foreach($data as $row)
+		{
+			$assos = new Association(
+				$row["libelle_association"],
+				null, // read benevole
+				null
+			);
+
+			$assos->setId_association($row["id_association"]);
+
+			$associations[]= $assos;
 		}
-		catch(Exception $ex) {
-			die($ex->getMessage());
 			
-		}
+		return $associations;
     }
 
     public static function updateAssociation($pdo, $association){
-		try{
-			$req = $pdo->prepare("UPDATE association set'libelle_association = :libelle, id_contact_association = :contact_assoc where id_association = :id_association'");
-			$req->execute(array(
-				':libelle'=>$association->getLibelle(), 
-				':contact_assoc'=>$association->getContact()->getId(),
-				':id_association'=> $association->getId_association()
-				));
-		}
-		catch (Exception $e){
-			die($e->getMessage());
-		}		
+
+    	$query = "UPDATE association set libelle_association = '" . $association->getLibelle() . "',  id_contact_association = '" . $association->getContact()->getId() . "' where id_association ='" . $association->getId_association() . "'";
+    	$data = query($query);
+    		
 	}
 }
 
