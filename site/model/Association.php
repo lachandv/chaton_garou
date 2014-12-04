@@ -41,12 +41,11 @@ class Association {
 
 	public function setBenevoles($benevoles)
 	{
-		this->benevoles = $benevoles;
+		$this->benevoles = $benevoles;
 	}
 	
-	function __construct($id_association, $libelle, $contact, $benevoles)
+	public function __construct($libelle, $contact, $benevoles)
 	{
-		$this->id_association = $id_association;
 		$this->libelle = $libelle;
 		$this->contact = $contact;
 		$this->benevoles = $benevoles;
