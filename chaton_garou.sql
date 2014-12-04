@@ -103,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `catastrophe` (
 CREATE TABLE IF NOT EXISTS `type_catastrophe` (
   `id_type_catastrophe` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `libelle_catastrophe` varchar(20) CHARACTER SET utf8 NOT NULL,
-  `gravite_caastrophe` int(1) NOT NULL,
+  `gravite_catastrophe` int(1) NOT NULL,
   PRIMARY KEY (`id_type_catastrophe`),
   UNIQUE KEY `id_type_catastrophe` (`id_type_catastrophe`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
