@@ -58,3 +58,11 @@
 		<div><img src="img/blue.jpg" alt="Chaton garou : Que le chaton soit avec toi !!!"/></div>
 	</body>
 </html>
+
+<?php
+session_start();
+        require_once("sql.php");
+	connect();
+?>
+
+
