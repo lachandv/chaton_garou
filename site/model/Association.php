@@ -70,8 +70,7 @@ class Association {
 
 
 	public static function readAllAssociations($pdo) {
-    	try
-		{
+    	try {
 			$associations=array();
 			$query = $pdo->prepare('select * from association');
 			$query->execute();
@@ -89,13 +88,25 @@ class Association {
 			
 			return $associations;
 		}
-		catch(Exception $ex)
-		{
+		catch(Exception $ex) {
 			die($ex->getMessage());
 			
 		}
     }
 
+    public static function updateAssociation($pdo, $association){
+		try{
+			$req = $pdo->prepare("UPDATE association set'libelle_association = :libelle, id_contact_association = :contact_assoc where id_association = :id_association'");
+			$req->execute(array(
+				':libelle'=>$association->getLibelle(), 
+				':contact_assoc'=>$association->getContact()->getId(),
+				':id_association'=> $association->getId_association()
+				));
+		}
+		catch (Exception $e){
+			die($e->getMessage());
+		}		
+	}
 }
 
 ?>

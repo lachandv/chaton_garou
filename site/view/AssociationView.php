@@ -7,7 +7,7 @@
 
 	function showOrganisation($organisation) {
         echo '<div>';
-        echo '<div>Nom : ' + $organisation->getNom_association() + '</div>';
+        echo '<div>Nom : ' + $organisation->getLibelle() + '</div>';
         echo '<p>Benevoles : </p>';
         echo '<ul>';
         foreach($volunteer in $organisation->getBenevoles()) {
