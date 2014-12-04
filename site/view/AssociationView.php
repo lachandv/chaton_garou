@@ -10,9 +10,9 @@
         echo '<div>Nom : ' + $organisation->getLibelle() + '</div>';
         echo '<p>Benevoles : </p>';
         echo '<ul>';
-        foreach($volunteer in $organisation->getBenevoles()) {
+        /*foreach($volunteer in $organisation->getBenevoles()) {
             // showBenevoles();
-        }
+        }*/
         echo '</ul>';
         echo '</div>';
         echo '</div>';
@@ -21,8 +21,8 @@
     function showOrganisations($organisations) {
         echo '<ul>';
         foreach($organisation as $organisations) {
-            echo '<li>'
-            showOrganisation($organisation);
+            echo '<li>';
+            //showOrganisation($organisation);
             echo '</li>';
         }
         echo '</ul>';

@@ -41,30 +41,22 @@ class Association {
 
 	public function setBenevoles($benevoles)
 	{
-		this->benevoles = $benevoles;
+		$this->benevoles = $benevoles;
 	}
 	
-	function __construct($id_association, $libelle, $contact, $benevoles)
+	public function __construct($libelle, $contact, $benevoles)
 	{
-		$this->id_association = $id_association;
 		$this->libelle = $libelle;
 		$this->contact = $contact;
 		$this->benevoles = $benevoles;
 	}
 
 	public static function createAssociation($pdo, $association) {
-		try
-		{
-			$req = $pdo->prepare("INSERT INTO association 'libelle_association, id_contact_association' values ':libelle, :id_contact_association'");
-			$req->execute(array(
-				':libelle' => $association->getLibelle(), 
-				':id_contact_association' => $association->getContact()->getId()
-				));
-		}
-		catch (Exception $e)
-		{
-			die($e->getMessage());
-		}		
+		$query = "INSERT INTO association (libelle_association, id_contact_association) values ('" .
+				$association->getLibelle() ."','" . 
+				$association->getContact()->getId() . "')";	
+
+		$req = query($query);	
 
 	}
 
