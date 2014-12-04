@@ -4,42 +4,7 @@ html
 }
 body>img
 {
-	position: absolute;
 	top: 10%;
-	width:750px;
-	height: 421.875px;
-	left: -moz-calc(50% - 325px);
-	left: -webkit-calc(50% - 325px);
-	left: calc(50% - 325px);
-	z-index: 3;
-}
-div
-{
-	width: 750px;
-	height: 421.875px;
-	overflow: hidden;
-	background-image: url("img/blue.jpg") no-repeat;
-	background-position: 50% 50%;
-	position: absolute;
-	left: -moz-calc(50% - 325px);
-	left: -webkit-calc(50% - 325px);
-	left: calc(50% - 325px);
-	top:10%;
-	z-index: 2;
-	/*-webkit-animation: blue 3s infinite;
-	-moz-animation: blue 3s infinite;
-	animation: blue 3s infinite;*/
-}
-
-@-webkit-keyframes blue {
-	0% { background-position: 0% 0%;}
-	100% { background-position: 100% 0%;}
-}
-@-moz-keyframes blue {
-	0% { background-position: 0% 0%;}
-	100% { background-position: 100% 0%;}
-}
-@keyframes blue {
-	0% { background-position: 0% 0%;}
-	100% { background-position: 100% 0%;}
+	width:750%;
+	left: 25%;
 }
