@@ -55,11 +55,6 @@ nav ul li
 	height: 20px;
 	margin-left: 10px;
 }
-nav ul li:after
-{
-	width: 2px;
-	background-color: #29262D;
-}
 #banniere
 {
 	width: 100%;
