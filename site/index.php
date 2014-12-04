@@ -8,6 +8,7 @@
 	</head>
 	<body>
 		<img src="img/background2.jpg" alt="Chaton garou : Que le chaton soit avec toi !!!"/>
+		<a href="accueil.php">Entrer sur le site</a>
 	</body>
 </html>
 
