@@ -1,11 +1,16 @@
 <header>
-	<div id="logo"></div>
-	<nav>
-		<ul>
-			<li></li>
-		</ul>
-	</nav>
+	<div>
+		<div id="logo"><img src="img/logo.png" alt="Logo des chatons garoux"/></div>
+		<nav>
+			<ul>
+				<li>rrrertgrthrtgd</li>
+				<li>rrrertgrthrtgd</li>
+				<li>rrrertgrthrtgd</li>
+				<li>rrrertgrthrtgd</li>
+			</ul>
+		</nav>
+	</div>
 </header>
 <div id="banniere">
-	<h2></h2>
+	<h2>hfhgfhhghgfhfthfghfg</h2>
 </div>

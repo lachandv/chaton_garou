@@ -1,9 +1,20 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
 html
 {
 	width: 100%;
 	height: 100%;
 	margin:0;
 	padding: 0;
+	background-color: #E7E6E8;
+}
+body
+{
+	width: 100%;
+	height: 100%;
 }
 body>img
 {
@@ -16,4 +27,57 @@ header
 	width: 100%;
 	height: 50px;
 	background-color: #1E1C20; 
+}
+header>div
+{
+	width: 60%;
+	height: 50px;
+	margin:auto;
+}
+#logo
+{
+	height: 50px;
+}
+#logo img
+{
+	height: 50px;
+}
+#logo, nav
+{
+	display: inline-block;
+	vertical-align: top;
+}
+nav ul li
+{
+	display: inline-block;
+	list-style-type: none;
+	padding: 15px;
+	height: 20px;
+	margin-left: 10px;
+}
+nav ul li:after
+{
+	width: 2px;
+	background-color: #29262D;
+}
+#banniere
+{
+	width: 100%;
+	height: 200px;
+	background: #f96e4c;
+	background: -moz-linear-gradient(left,  #f96e4c 0%, #792671 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f96e4c), color-stop(100%,#792671));
+	background: -webkit-linear-gradient(left,  #f96e4c 0%,#792671 100%);
+	background: -o-linear-gradient(left,  #f96e4c 0%,#792671 100%);
+	background: -ms-linear-gradient(left,  #f96e4c 0%,#792671 100%);
+	background: linear-gradient(to right,  #f96e4c 0%,#792671 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f96e4c', endColorstr='#792671',GradientType=1 );
+
+}
+#banniere>h2
+{
+	font-size: 3em;
+	color: white;
+	width: 60%;
+	margin: auto;
 }
