@@ -13,6 +13,7 @@
 			img
 			{
 				width: 50%;
+				margin-left:25%;
 			}
 		</style>
 	</head>
