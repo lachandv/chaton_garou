@@ -1,5 +1,5 @@
 <?php
-
+include("./../../sql.php");
 class Association {
 	private $id_association;
 	private $libelle;
@@ -61,7 +61,7 @@ class Association {
 	}
 
 
-	public static function readAllAssociations($pdo) {
+	public static function readAllAssociations() {
 
 		$query = 'select * from association';
 			

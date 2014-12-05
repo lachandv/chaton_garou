@@ -8,7 +8,7 @@
     }
 
     function showOrganisation($organisation) {
-        echo '<div>';
+        echo '<div class="organisations">';
         echo '<div>Nom : ' + $organisation->getLibelle() + '</div>';
         echo '<p>Benevoles : </p>';
         echo '<ul>';
@@ -17,12 +17,11 @@
         }*/
         echo '</ul>';
         echo '</div>';
-        echo '</div>';
     }
 
     function showOrganisations($organisations) {
         echo '<ul>';
-        foreach($organisation as $organisations) {
+        foreach($organisations as $organisation) {
             echo '<li>';
             showOrganisation($organisation);
             echo '</li>';
