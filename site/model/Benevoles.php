@@ -35,6 +35,9 @@
 	
 	public static function CreateBenevole($nom,$prenom,$mail,$phone,$password)
 	{
+		echo $nom;
+		echo $prenom;
+		echo $mail;
 		
 		try
 		{
