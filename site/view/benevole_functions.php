@@ -39,6 +39,7 @@
 				
 				
 <?php
+
 		}
 		
 		function displayAllBenevoles()
@@ -87,8 +88,4 @@
 			
 <?php
 	}
-	
-		
-		
-	
-		
+
