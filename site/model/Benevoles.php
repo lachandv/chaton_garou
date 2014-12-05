@@ -39,8 +39,12 @@
 		{
 			$req=dbconnexion()->prepare("INSERT INTO benevole(nom_benevole,prenom_benevole,mail_benevole,phone_benevole,password) values (:nom,:prenom,:mail,:phone,:password)");
 			$req->execute(array("nom"=>$nom,"prenom"=>$prenom,"mail"=>$mail,"phone"=>$phone,"password"=>$password));
-			$Benevole= new Benevole($nom,$prenom,$mail,$phone,$password);
-			$_SESSION['user']=$Benevole;
+			$_SESSION["user"]= new Benevole($nom,$prenom,$mail,$phone,$password);
+				$_SESSION["user"]->setNom($nom);
+				$_SESSION["user"]->setPrenom($prenom);
+				$_SESSION["user"]->setMail($mail);
+				$_SESSION["user"]->setPhone($phone);
+				$_SESSION["user"]->setPassword($password);
 		}
 		catch (Exception $e)
 		{
@@ -108,7 +112,6 @@
 				
 			$query = "UPDATE benevole SET nom_benevole=:nom, prenom_benevole=:prenom, mail_benevole=:mail, phone_benevole=:phone, password=:password where mail_benevole='".$mail."'";
 			$req=dbconnexion()->prepare($query);
-			echo $query;
 			$req->bindParam(':nom',$nom);
 			$req->bindParam(':prenom',$prenom);
 			$req->bindParam(':mail',$mail);
@@ -134,7 +137,7 @@
 		}
 	}
 	
-	public static function deleteBenevole($nom,$prenom,$mail,$phone,$password)
+	public static function deleteBenevole($mail)
 	{
 		try
 		{

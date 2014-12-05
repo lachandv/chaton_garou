@@ -8,7 +8,7 @@
 		private $phone_Benevole;
 		private $password_Benevole;
 		
-	public function getId(){
+		public function getId(){
 		return $this->id_Benevole;
 	}
 
@@ -58,7 +58,6 @@
 	
 	public function __construct ($nom,$prenom,$mail,$phone,$password)
 	{
-		
 		$this->nom=$nom;
 		$this->prenom=$prenom;
 		$this->mail=$mail;
