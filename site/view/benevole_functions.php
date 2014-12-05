@@ -68,14 +68,22 @@
 		
 
 			<form method="post" action=".">
-			<p> nom :<input type="text" value="<?php echo $_SESSION["user"]->nom;?>" name="new_name"/></p>
-			<p> prenom :<input type="text" value="<?php echo $_SESSION["user"]->prenom;?>" name="new_prenom"/></p>
-			<p> mail :<input type="text" value="<?php echo $_SESSION["user"]->mail;?>"name="new_mail"/></p>
-			<p> phone :<input type="text" value="<?php echo $_SESSION["user"]->phone;?>"name="new_phone"/></p>
-			<p> password :<input type="text" value="<?php echo $_SESSION["user"]->password;?>" name="new_password"/></p>
+			<p> nom :<input type="text" value="<?php echo $_SESSION["user"]->getNom();?>" name="new_name"/></p>
+			<p> prenom :<input type="text" value="<?php echo $_SESSION["user"]->getPrenom();?>" name="new_prenom"/></p>
+			<p> mail :<input type="text" value="<?php echo $_SESSION["user"]->getMail();?>"name="new_mail"/></p>
+			<p> phone :<input type="text" value="<?php echo $_SESSION["user"]->getPhone();?>"name="new_phone"/></p>
+			<p> password :<input type="text" value="<?php echo $_SESSION["user"]->getPassword();?>" name="new_password"/></p>
 			
 			<input type="submit" value="sauvegarder"/>
 			</form>
+			
+			<h1> Supprimer un compte </h1>
+			
+			<form method="post" action="."/>
+			<p>Entrez l'adresse mail du compte à supprimer</p>
+			<input type="text" name="mail_delete"/>
+			<input type="submit" value="Effacer"/>
+			
 			
 			
 			

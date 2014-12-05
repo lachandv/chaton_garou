@@ -16,6 +16,12 @@
 				echo $_POST["new_name"];
 				Benevoles::updateBenevole($_POST["new_name"],$_POST["new_prenom"],$_POST["new_mail"],$_POST["new_phone"],$_POST["new_password"]);
 			}
+			
+			if(isset($_POST["mail_delete"]))
+			{
+				Benevoles::deleteBenevole($_POST["mail_delete"]);
+				
+			}
 		
 
 	
