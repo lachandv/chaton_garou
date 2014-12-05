@@ -8,6 +8,7 @@
 			html
 			{
 				background-color: black;
+				color: white;
 			}
 			img
 			{
@@ -30,8 +31,8 @@
 	<body>
 		<img src="img/background.png" alt="Chaton garou : Que le chaton soit avec toi !!!"/><br/>
 		<p><a href="accueil.php">Entrer sur le site</a></p>
-		<p><b>Ce qui était prévu : </b>Une application qui permet à des bénévoles de se renseigner sur des catastrophes naturels ou des incidents industriels dans la zones autour d'eux, via une géolocalisation. L'application permet l'inscription des benevoles, avec leurs compétences ainsi que l'inscription des associations humanitaires afin que chacun puisse s'associer à un évênement, afin de pouvoir améliorer la communication et la gestion humaine. Enfin l'application permetrait degérer les stocks de chaque association dans un lieu, afin de voir rappidement ce qui est disponnible a proximité de chaque évênement</p>
-		<p><b>Ce qui est fait : </b><ul><li>l'affichage de la liste des bénévoles et des associations présents dans la base de donnée</li><li>la géolocalisation de l'utilisateur avec affichage sur une map interactive</li></ul></p>
+		<p><b>Ce qui Ã©tait prÃ©vu : </b>Une application qui permet Ã  des bÃ©nÃ©voles de se renseigner sur des catastrophes naturels ou des incidents industriels dans la zones autour d'eux, via une gÃ©olocalisation. L'application permet l'inscription des benevoles, avec leurs compÃ©tences ainsi que l'inscription des associations humanitaires afin que chacun puisse s'associer Ã  un Ã©vÃªnement, afin de pouvoir amÃ©liorer la communication et la gestion humaine. Enfin l'application permetrait degÃ©rer les stocks de chaque association dans un lieu, afin de voir rappidement ce qui est disponnible a proximitÃ© de chaque Ã©vÃªnement</p>
+		<p><b>Ce qui est fait : </b><ul><li>l'affichage de la liste des bÃ©nÃ©voles et des associations prÃ©sents dans la base de donnÃ©e</li><li>la gÃ©olocalisation de l'utilisateur avec affichage sur une map interactive</li></ul></p>
 	</body>
 </html>
 
