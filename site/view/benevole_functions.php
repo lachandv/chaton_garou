@@ -42,14 +42,11 @@
 				
 <?php
 
-	if(isset($_SESSION["user"]))
-	{
-		echo $_SESSION["user"]->mail;
-	}
-	else
-	{
-	echo "rien";
-	}
+		}
+		
+		function displayAllBenevoles()
+		{
+		
 	
 ?>
 	
@@ -63,6 +60,11 @@
 			{	
 				echo "nom :". $row[0] . "Prénom :". $row[1] ."Téléphone : ". $row[2] . "</br>" ;
 			}
+			
+			}
+			
+			function displayProfil()
+			{
 ?>
 		<h1> Consultation du profil</h1>
 		
@@ -88,12 +90,14 @@
 			
 			
 <?php
-
+	}
+	
+		
 		
 	
 		
 		
-		}
+		
 					
 
 			
