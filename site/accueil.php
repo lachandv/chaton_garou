@@ -8,6 +8,6 @@
 	</head>
 	<body>
 		<?php $retour=""; include("header.php"); ?>
-		<div>nvckn,gjnbfggh ryfjfdhnbrtfb jt nyfg nryyf hjcgjj</div>
+		<a href="/chaton_garou/site/map.html"><button>Vous localiser</button></a>
 	</body>
 </html>
