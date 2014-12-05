@@ -10,7 +10,7 @@
 				<a href="/chaton_garou/site/catastrophes/"><li>Les catastrophes</li></a>
 			</ul>
 		</nav>
-		<a href="/chaton_garou/site/profil/"><div id="header_profil">Votre profil</div></a>
+		<a href="/chaton_garou/site/inscription/"><div id="header_profil">S'inscrire</div></a>
 	</div>
 </header>
 <div id="banniere">
