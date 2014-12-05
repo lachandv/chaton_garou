@@ -14,5 +14,5 @@
 	</div>
 </header>
 <div id="banniere">
-	<h2>hfhgfhhghgfhfthfghfg</h2>
+	<h2>Le 1er site qui regroupe les bénévoles et les associations humanitaires...</h2>
 </div>
