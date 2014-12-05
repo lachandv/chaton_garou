@@ -16,8 +16,6 @@
 				include("./../db.php");
 				
 				include("./../view/benevole_functions.php");
-				displayHeader();
-				displayAllBenevoles();
 				displayProfil();
 				include("./../controller/benevole_controller.php");
 			?>

@@ -8,7 +8,7 @@
 }
 try
 {
-	$dbconnexion= new PDO('mysql:host=localhost;dbname=chaton_garou','root','');
+	$dbconnexion= new PDO('mysql:host=127.0.0.1;dbname=chaton_garou','root','nuitinfo');
 }
 catch(Exception $e)
 {

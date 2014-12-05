@@ -8,7 +8,7 @@
 	{
 		try
 			{
-				$req=dbconnexion()->prepare("select * from Benevole where mail=:mail and password=:password");
+				$req=dbconnexion()->prepare("select * from benevole where mail=:mail and password=:password");
 				$req->bindParam(':mail',$mail);
 				$req->bindParam(':password',$password);
 				$req->execute();
@@ -35,6 +35,7 @@
 	
 	public static function CreateBenevole($nom,$prenom,$mail,$phone,$password)
 	{
+		
 		try
 		{
 			$req=dbconnexion()->prepare("INSERT INTO benevole(nom_benevole,prenom_benevole,mail_benevole,phone_benevole,password) values (:nom,:prenom,:mail,:phone,:password)");
@@ -50,7 +51,7 @@
 		{
 			die($e->getMessage());
 		}
-		
+		header("Location: /chaton_garou/site/benevoles/");
 	}
 	
 	public static function ReadAllBenevole()

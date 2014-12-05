@@ -1,7 +1,6 @@
 ﻿
 
 	<?php
-
 	function displayHeader()
 	{
 ?>
@@ -21,7 +20,6 @@
 		</head>
 		<body>
 <?php
-
 	}
 	
 	function displayFormulaire()
@@ -53,7 +51,6 @@
 		<h1> Affichage de tous les benevoles</h1>
 		
 <?php
-
 			$Benevoles=Benevoles::ReadAllBenevole();
 			
 			foreach($Benevoles as $row)
@@ -91,14 +88,4 @@
 			
 <?php
 	}
-	
-		
-		
-	
-		
-		
-		
-					
 
-			
-	
