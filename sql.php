@@ -2,7 +2,7 @@
 function connect() { 
 try
 	{
-	$db = new PDO('pgsql:host=localhost;dbname=chaton_garou', 'chaton_garou','jaimeleslicornes');
+	$db = new PDO('mysql:host=localhost;dbname=chaton_garou', 'chaton_garou','jaimeleslicornes');
 	$db -> exec('SET CHARACTER SET utf8');
 	return $db;
 	}
