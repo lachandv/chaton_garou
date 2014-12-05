@@ -1,13 +1,13 @@
 <header>
 	<div>
-		<div id="logo"><img src="img/logo.png" alt="Logo des chatons garoux"/></div>
+		<a href="/chaton_garou/site/accueil.php"><div id="logo"><img src="/chaton_garou/site/img/logo.png" alt="Logo des chatons garoux"/></div></a>
 		<nav>
 			<ul>
-				<a href="association/"><li>Les associations</li></a>
+				<a href="/chaton_garou/site/association/"><li>Les associations</li></a>
 				<li class="intermenu"></li>
-				<li>rrrertgrthrtgd</li>
+				<a href="/chaton_garou/site/benevoles/"><li>Les bénévoles</li></a>
 				<li class="intermenu"></li>
-				<li>rrrertgrthrtgd</li>
+				<a href="/chaton_garou/site/catastrophes/"><li>Les catastrophes</li></a>
 				<li class="intermenu"></li>
 				<li>rrrertgrthrtgd</li>
 			</ul>

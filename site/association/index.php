@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" href="img/favicon.ico" />
 	</head>
 	<body>
-		<?php include("../header.php"); ?>
+		<?php $retour="../"; include("../header.php"); ?>
 		<div>
 			<?php
 				include("./../view/AssociationView.php");
