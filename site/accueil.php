@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" href="img/favicon.ico" />
 	</head>
 	<body>
-		<?php $retour=""; include("header.php"); ?>
+		<?php include("header.php"); ?>
 		<script>
 
 
@@ -27,6 +27,7 @@ var x = document.getElementById("demo");
 </script>
 
 <button onclick="getLocation()">vous localiser</button>
+<p id="demo"></p>
 
 	</body>
 </html>
