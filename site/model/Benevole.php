@@ -1,5 +1,4 @@
 <?php
-
 	class Benevole{
 	
 		private $id_Benevole;

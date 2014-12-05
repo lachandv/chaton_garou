@@ -8,10 +8,9 @@
 				<a href="/chaton_garou/site/benevoles/"><li>Les bénévoles</li></a>
 				<li class="intermenu"></li>
 				<a href="/chaton_garou/site/catastrophes/"><li>Les catastrophes</li></a>
-				<li class="intermenu"></li>
-				<li>rrrertgrthrtgd</li>
 			</ul>
 		</nav>
+		<a href="profil/"><div>Votre profil</div></a>
 	</div>
 </header>
 <div id="banniere">

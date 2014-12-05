@@ -2,5 +2,7 @@
 
 	displayHeader();
 	displayFormulaire();
+	displayAllBenevoles();
+	displayProfil();
 	
 ?>

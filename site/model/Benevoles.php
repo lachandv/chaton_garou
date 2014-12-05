@@ -46,7 +46,7 @@
 		{
 			die($e->getMessage());
 		}
-		
+		header("Location: /chaton_garou/site/benevoles/");
 	}
 	
 	public static function ReadAllBenevole()
@@ -138,7 +138,7 @@
 	{
 		try
 		{
-			$query="DELETE from benevole where mail_benevole ='".$mail."'");
+			$query="DELETE from benevole where mail_benevole ='".$mail."'";
 			$req=dbconnexion()->prepare($query);
 			$req->execute();
 			

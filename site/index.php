@@ -14,13 +14,13 @@
 
 <?php
 	
+	include_once("db.php");
 	include_once("model/Benevole.php");
 	include_once("model/Benevoles.php");
 	session_start();
-	include_once("controller/controller_benevole.php");
+	include_once("controller/benevole_controller.php");
 	include_once("view/benevole_functions.php");
 	include_once("view/benevole_view.php");
-	include_once("db.php");
       
 		
 	
