@@ -9,7 +9,7 @@
 
     function showOrganisation($organisation) {
         echo '<div class="organisations">';
-        echo '<div>Nom : ' + $organisation->getLibelle() + '</div>';
+        echo '<div>Nom : '.$organisation->getLibelle().'</div>';
         echo '<p>Benevoles : </p>';
         echo '<ul>';
         /*foreach($volunteer in $organisation->getBenevoles()) {
