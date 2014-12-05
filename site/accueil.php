@@ -8,6 +8,25 @@
 	</head>
 	<body>
 		<?php $retour=""; include("header.php"); ?>
-		<a href="/chaton_garou/site/map.html"><button>Vous localiser</button></a>
+		<script>
+
+
+function getLocation() {
+var x = document.getElementById("demo");
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+var x = document.getElementById("demo");
+    x.innerHTML = '<iframe width="400" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://cartosm.eu/map?lon='+position.coords.longitude+'&lat='+ position.coords.latitude+'&zoom=18&width=400&height=350&mark=true&nav=true&pan=false&zb=inout&style=default&icon=down"></iframe>';	
+}
+</script>
+
+<button onclick="getLocation()">vous localiser</button>
+
 	</body>
 </html>
