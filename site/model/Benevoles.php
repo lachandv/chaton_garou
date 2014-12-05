@@ -8,7 +8,7 @@
 	{
 		try
 			{
-				$req=dbconnexion()->prepare("select * from Benevole where mail=:mail and password=:password");
+				$req=dbconnexion()->prepare("select * from benevole where mail=:mail and password=:password");
 				$req->bindParam(':mail',$mail);
 				$req->bindParam(':password',$password);
 				$req->execute();
