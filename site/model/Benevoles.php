@@ -35,9 +35,9 @@
 	
 	public static function CreateBenevole($nom,$prenom,$mail,$phone,$password)
 	{
-		echo $nom;
-		echo $prenom;
-		echo $mail;
+		echo "<script>alert('".$nom."');</script>";
+		echo "<script>alert('".$prenom."');</script>";
+		echo "<script>alert('".$mail."');</script>";
 		
 		try
 		{
