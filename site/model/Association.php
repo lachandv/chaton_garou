@@ -89,6 +89,14 @@ class Association {
     	$data = query($query);
     		
 	}
+
+		 public static function deleteAssociation($association){
+	 	echo $association->getId_association();
+    	$query = "DELETE FROM association where id_association='" . $association->getId_association() ."'";
+    	echo $query ;
+    	$data = query($query);
+    		
+	}
 }
 
 ?>
