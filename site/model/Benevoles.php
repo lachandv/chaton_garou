@@ -35,6 +35,7 @@
 	
 	public static function CreateBenevole($nom,$prenom,$mail,$phone,$password)
 	{
+		
 		try
 		{
 			$req=dbconnexion()->prepare("INSERT INTO benevole(nom_benevole,prenom_benevole,mail_benevole,phone_benevole,password) values (:nom,:prenom,:mail,:phone,:password)");
